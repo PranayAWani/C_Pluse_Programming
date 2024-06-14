@@ -1,7 +1,5 @@
-#include<iostream>
-using namespace std;
+#include<iostream.h>
 
-int main(){
-    count<<"hello bixu"<<endl;
-    return 0;
+void main(){
+    cout<<"Hello World";
 }
