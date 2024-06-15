@@ -1,5 +1,5 @@
-#include<iostream.h>
-
-void main(){
+#include<iostream>
+using namespace std;
+int main(){
     cout<<"Hello World";
 }
