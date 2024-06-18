@@ -13,11 +13,12 @@ class student{
         cout<<"\n Roll no.:- "<<number;
         cout<<"\n Name:- "<<name;
         cout<<"\n Percentage:- "<<per;
+        cout<<"\n*********************";
     }
 };
 int main(){
     int i;
-    cout<<"\n Enter number of students";
+    cout<<"\n Enter number of students:- ";
     cin>>i;
     student S[i];
     for(int j=0;j<i;j++){
