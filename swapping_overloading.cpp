@@ -6,26 +6,26 @@ class Swapping {
 public:
     void swap(int a, int b) {
         cout << "\n Before Swapping \t A = " << a << "\t B = " << b;
-        int temp = a;
+        int c = a;
         a = b;
-        b = temp;
+        b = c;
         cout << "\n After Swapping \t A = " << a << "\t B = " << b;
         cout << "\n************************************";
     }
 
     void swap(float a, float b) {
         cout << "\n Before Swapping \t A = " << a << "\t B = " << b;
-        float temp = a;
+        float c = a;
         a = b;
-        b = temp;
+        b = c;
         cout << "\n After Swapping \t A = " << a << "\t B = " << b;
         cout << "\n************************************";
     }
     void swap(string a, string b) {
         cout << "\n Before Swapping \t A = " << a << "\t B = " << b;
-        string temp = a;
+        string c = a;
         a = b;
-        b = temp;
+        b = c;
         cout << "\n After Swapping \t A = " << a << "\t B = " << b;
         cout << "\n************************************";
     }
