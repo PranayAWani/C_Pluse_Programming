@@ -3,33 +3,34 @@ using namespace std;
 class convertor{
     public:
     void degkel(float &temp){
-        cout<<"\n "<<temp<<" Degree Celcius = "<<temp+273.15<<" Kelvin";
+        cout<<"\n "<<temp<<" Degree Celcius = "<<(float)temp+273.15<<" Kelvin";
     }
     void keldeg(float &temp){
-        cout<<"\n "<<temp<<" Kelvin = "<<temp-273.15<<" Degree Celcius";
+        cout<<"\n "<<temp<<" Kelvin = "<<(float)temp-273.15<<" Degree Celcius";
     }
     void degFar(float &temp){
-        cout<<"\n "<<temp<<" Degree Celcius = "<<(5/9)*(temp-32)<<" Farhenite ";
+        cout<<"\n "<<temp<<" Degree Celcius = "<<(float)(5/9)*(temp-32)<<" Farhenite ";
     }
     void fardeg(float &temp){
-        cout<<"\n "<<temp<<" Farhenite = "<<(5/9)*(temp-273.15)<<" Degree Celcius";
+        cout<<"\n "<<temp<<" Farhenite = "<<(float)(5/9)*(temp-273.15)<<" Degree Celcius";
     }
     void kelFar(float &temp){
-        cout<<"\n "<<temp<<" Kelvin = "<<(9/5)*(temp-273.15)+32<<" Farhenite ";
+        cout<<"\n "<<temp<<" Kelvin = "<<(float)(9/5)*(temp-273.15)+32<<" Farhenite ";
     }
     void Farkel(float &temp){
-        cout<<"\n "<<temp<<" Farhenite = "<<(5/9)*(temp-32)+273.15<<" Kelvin ";
+        cout<<"\n "<<temp<<" Farhenite = "<<(float)(5/9)*(temp-32)+273.15<<" Kelvin ";
     }
     
 };
 
 
 int main(){
-    checkup:
+    
     convertor c1;
     int no;
     float temp;
     cout<<"\n 1 for degree to kelvin conversion \t 2 for kelvin to degree conversion \n 3 for degree to Farhenite conversion \t 4 for Farhenite to degree conversion \n 5 for Kelvin to Farhentie conversion \t 6 for Farhentie to kelvin conversion";
+    checkup:
     cout<<"\n Enter the number dedicated to the operation you want to perform:- ";
     cin>>no;
     cout<<"\n Enter the tempreture to convert it:- ";
