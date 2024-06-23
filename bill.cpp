@@ -89,11 +89,8 @@ public:
     int getFruitPrice(const string& fruit) {
         map<string, int> fruitPrices = {
             {"apple", 100}, {"banana", 48}, {"grapes", 50}, {"orange", 40},
-            {"mango", 150}, {"lichi", 300}, {"jamun", 400}, {"pomegranate", 200},
-            {"watermelon", 60}, {"melon", 60}, {"papaya", 40}, {"pineapple", 70},
-            {"kiwi", 160}, {"strawberry", 250}, {"berry", 350}
+            {"mango", 150}, {"lichi", 300}, {"jamun", 400}, {"pomegranate", 200},{"watermelon", 60}, {"melon", 60}, {"papaya", 40}, {"pineapple", 70},{"kiwi", 160}, {"strawberry", 250}, {"berry", 350},{"sweet_lime",40}
         };
-
         if (fruitPrices.find(fruit) != fruitPrices.end()) {
             return fruitPrices[fruit];
         } else {
@@ -113,11 +110,9 @@ void Bill::bottom() {
         cout << "The number of types of fruits should be a positive integer." << endl;
         return;
     }
-
     string* fruits = new string[fno];
     int* quantities = new int[fno];
-
-    cout << "Enter the names and quantities of the fruits:" << endl;
+    cout << "\nEnter the names and quantities of the fruits:- ";
     for (int i = 0; i < fno; ++i) {
         cout << "Fruit " << (i + 1) << ": ";
         cin >> fruits[i] >> quantities[i];
@@ -132,15 +127,11 @@ void Bill::bottom() {
         if (price != -1) {
             int cost = price * quantities[i];
             totalCost += cost;
-            cout <<i<<"\t"<< fruits[i] << "\t\t" << quantities[i] << "\t\t" << price << "\t" << cost ;
+            cout <<"\n"<<i<<"\t"<< fruits[i] << "\t\t" << quantities[i] << "\t\t" << price << "\t" << cost ;
         }
     }
-
-    cout << "Total cost: " << totalCost << endl;
+    cout << "\nTotal cost: " << totalCost << endl;
     cout << "\n***********************************************";
-
-    delete[] fruits;
-    delete[] quantities;
 }
 int main() {
     Bill b;
