@@ -11,9 +11,17 @@ class employ{
     }
     employ(int i){
         id=i;
+        name="Vibhor";
+        sal=24000;
     }
     employ(int i, float s){
         id =i;
+        name = "Aditi";
+        sal =s;
+    }
+    employ(float s, int i){
+        id = i;
+        name = "Shlok";
         sal =s;
     }
     employ(int i, string n ,float s){
@@ -27,4 +35,6 @@ class employ{
         cout<<"\n Employ salary:- "<<sal;
     }
 };
-int main
+int main(){
+    employ e1,e2(102)
+}
