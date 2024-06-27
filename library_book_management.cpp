@@ -34,6 +34,7 @@ int main(){
         cout<<"\n Enter your assigned three digit Roll no. to get your info:- ";
         cin>>number;
     }
+    staff:
     else if(person=="Staff"|| person=="staff"){
         int check;
         cout<<"\n 1 for adding the name of student \t 2 for removing the name of student\n 3 for issuing the book to the student \t 4 for adding a new book to the library";
@@ -42,6 +43,19 @@ int main(){
         case(check){
             switch 1:{
                 break;
+            }
+            switch 2:{
+                break;
+            }
+            switch 3:{
+                break;
+            }
+            switch 4:{
+                break;
+            }
+            default{
+                cout<<"\nEnter a valid number";
+                goto staff();
             }
         }
     }
