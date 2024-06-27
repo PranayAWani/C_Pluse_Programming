@@ -6,10 +6,10 @@ class reverse{
     void get(){
         cout<<"\n Enter the number to reverse";
         cin>>no;
-        cout<<"\n Before reversing the number :- ";<<no;
+        cout<<"\n Before reversing the number :- "<<no;
     }
     void reves();
-}
+};
 void reverse::reves(){
     rev=0;
     while(no>0){
@@ -17,10 +17,10 @@ void reverse::reves(){
         rev=rev*10+rem;
         no=no/10;
     }
-    cout<<"After Reversing the number :- "<<rev;
+    cout<<"\n After Reversing the number :- "<<rev;
 }
 
-void main(){
+int main(){
     reverse r1;
     r1.get();
     r1.reves();
