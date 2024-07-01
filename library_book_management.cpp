@@ -55,7 +55,7 @@ int main(){
             }
             default{
                 cout<<"\nEnter a valid number";
-                goto staff();
+                goto staff(); 
             }
         }
     }
