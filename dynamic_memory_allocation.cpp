@@ -2,10 +2,10 @@
 #include<string>
 using namespace std;
 class dynamic{
-    string *p;
+    char *p;
     public:
     dynamic(){
-        p=new string;
+        p=new char;
         p= "soft";
     }
     void print(){
