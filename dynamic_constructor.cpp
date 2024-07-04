@@ -5,11 +5,11 @@ class dynamic{
     char *p;
     public:
     dynamic(){
-        p=new char;
-        p= "soft";
+        p=new char[7];
+        p="soft";
     }
     void print(){
-        cout<<"\n Dynamic memory Value:- "<<p;
+        cout<<"\n Dynamic Memory Value:- "<<p;
     }
 };
 int main(){
