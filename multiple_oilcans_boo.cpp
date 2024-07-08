@@ -12,7 +12,7 @@ class oilcan{
         cin>>ltr>>ml;
     }
     void put(){
-        cout<<"\n"<<ltr<<"\t"<<ml;
+        cout<<"\t"<<ltr<<"\t"<<ml;
     }
     oilcan operator +(oilcan m){
         oilcan temp;
@@ -34,5 +34,12 @@ int main(){
         o[i+1]=o[i]+t1;
         t1 = o[i+1];
     }
+    cout<<"\n liters"<<"\t ml:- ";
+    for(i=1;i<=no;i++){
+        cout<<"\n"<<i<<". ";
+        o[i].put();
+    }
+    cout<<"\n __________________";
+    cout<<"\n";
     t1.put();
 }
