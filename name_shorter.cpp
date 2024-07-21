@@ -1,5 +1,5 @@
 #include<iostream>
-#include<string>
+#include<cstring>
 using namespace std;
 class shortt{
     public:
@@ -10,10 +10,13 @@ class shortt{
         cin>>name;
         cout<<"\nEnter the length you want in your id:- ";
         cin>>no;
+        cout<<name<<no;
     }
     void shorter();
     void cal(){
-        if(sizeof(name)<=no){
+        // int a=strlen(name);
+        // cout<<a;
+        if(name.length()<no){
             cout<<"\n Your entered id is less than your maximum limit:- "<<name;
         }
         else{
@@ -23,13 +26,10 @@ class shortt{
 };
 void shortt::shorter(){
     if(no==2){
-        cout<<"\n Your shorted id id:- "<<name[0];
-        int i;
-        i=sizeof(name)-1;
-        cout<<name[i];
+        cout<<"\n Your shorted id is:- "<<name[0]<<name.back();
     }
     else{
-        cout<<"\n Work under process";
+        cout<<"\n Your shorted id is:- "<<name[0]<<name[sizeof(name)/no]<<name.back();
     }
 }
 int main(){
